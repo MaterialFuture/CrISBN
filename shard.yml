@@ -1,0 +1,13 @@
+name: randomISBN
+version: 0.1.1
+
+authors:
+  - MaterialFuture <konstantine@andrasmedia.org>
+
+targets:
+  GenerateISBN:
+    main: src/randomISBN.cr
+
+crystal: 0.31.1
+
+license: MIT
