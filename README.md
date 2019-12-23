@@ -2,7 +2,6 @@
 
 [![Language](https://img.shields.io/badge/language-crystal-776791.svg)](https://github.com/crystal-lang/crystal)
 ![stability-wip](https://img.shields.io/badge/stability-work_in_progress-lightgrey.svg)
-![(https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md#pull-requests)
 
 **Please Note**: This project is a Work In Progress, this shouldn't be used in any production environment. When this project is ready to use I'll make sure to change the badge above to show that it's stable.
 
