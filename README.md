@@ -2,7 +2,7 @@
 
 [![Language](https://img.shields.io/badge/language-crystal-776791.svg)](https://github.com/crystal-lang/crystal)
 ![stability-wip](https://img.shields.io/badge/stability-work_in_progress-lightgrey.svg)
-(https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md#pull-requests)
+[(https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md#pull-requests)
 
 **Please Note**: This project is a Work In Progress, this shouldn't be used in any production environment. When this project is ready to use I'll make sure to change the badge above to show that it's stable.
 
@@ -12,13 +12,14 @@ The idea is to eventually be able to generate all the different types of ISBNs o
 
 ## Installation
 
+**Please Note**: The below isn't ready, once a working release is published then this will be valid, but for those who know this can still use it in their projet if they know what they're doing.
+
 Add it to your `shard.yml`:
 
 ```crystal
 dependencies:
   redis:
-    github: stefanwille/crystal-redis
-    version: ~> 2.5.0
+    gitlab: random-isbn
 ```
 
 and then install the library into your project:
@@ -31,7 +32,9 @@ $ shards install
 ## Usage
 
 If you want to use this in your project just reference is with 
+- `RandomISBN::New` This will be how you can create 
 - `RandomISBN::New.english` To generate a random english ISBN
+- In the future perhaps something like `RandomISBN::English.new` would be a better way of going about it. I'm still looking into the best way to structure this.
 
 ## Development
 
