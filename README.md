@@ -9,9 +9,11 @@ This will generate a random legal ISBN number. The reason for this would be if y
 
 The idea is to eventually be able to generate all the different types of ISBNs or other types of codes with different language reference codes. Right now the goal for release is to generate just the english ones.
 
+Main Repository is the GitLab one <https://gitlab.com/MaterialFuture/random-isbn>
+
 ## Installation
 
-**Please Note**: The below isn't ready, once a working release is published then this will be valid, but for those who know this can still use it in their projet if they know what they're doing.
+**Please Note**: The below isn't ready, once a working release is published then this will be valid, but for those who know this can still use it in their project if they know what they're doing.
 
 Add it to your `shard.yml`:
 
