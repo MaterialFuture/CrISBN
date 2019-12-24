@@ -33,7 +33,7 @@ $ shards install
 
 If you want to use this in your project just reference is with 
 - `RandomISBN::English.new` This will be how you can create an ISBN
-- I also have a lottery type variable that is used that could be used elsewhere, right now it's accessed like RandNum.new.
+- I also have a lottery-like variable that is used that could be used elsewhere, right now it's accessed like `RandNum.new.fromZero`.
 
 
 ## Development

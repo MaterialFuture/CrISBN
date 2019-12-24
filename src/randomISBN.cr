@@ -10,7 +10,7 @@ module RandomISBN
     rand = RandomISBN::English.new
   end
 
-  # The main part of the app
+  # The main part of the app, returns the value as a string.
   puts "New ISBN-13: " + rand
   
   # Size for testing to make sure the while loop works

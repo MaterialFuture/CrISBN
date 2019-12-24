@@ -9,6 +9,6 @@ class RandNum
   end
 end
 
-# game = RandNum.new
-# puts game.zeroToNum 6
-# puts game.oneToNum 6
+# RandNum.new.fromZero 7 => eg. 6425020 (6-digit random string, can contain zeros)
+# RandNum.new.fromOne 7 => eg. 6425725 (6-digit random string, wont contain zeros)
+
