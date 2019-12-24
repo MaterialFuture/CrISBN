@@ -1,7 +1,7 @@
 require "./RandomISBN/**"
 
 module RandomISBN
-  VERSION = "0.1.2"
+  VERSION = "1.1.1"
 
   rand = RandomISBN::English.new
 

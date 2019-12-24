@@ -1,9 +1,7 @@
 # Random ISBN Generator in Crystal
 
 [![Language](https://img.shields.io/badge/language-crystal-776791.svg)](https://github.com/crystal-lang/crystal)
-![stability-wip](https://img.shields.io/badge/stability-work_in_progress-lightgrey.svg)
-
-**Please Note**: This project is a Work In Progress, this shouldn't be used in any production environment. When this project is ready to use I'll make sure to change the badge above to show that it's stable.
+![working](https://img.shields.io/badge/stability-working-success.svg)
 
 This will generate a random legal ISBN number. The reason for this would be if you want to get a random book or generate a random book for some project.
 
@@ -12,8 +10,6 @@ The idea is to eventually be able to generate all the different types of ISBNs o
 Main Repository is the GitLab one <https://gitlab.com/MaterialFuture/random-isbn>
 
 ## Installation
-
-**Please Note**: The below isn't ready, once a working release is published then this will be valid, but for those who know this can still use it in their project if they know what they're doing.
 
 Add it to your `shard.yml`:
 
@@ -41,11 +37,12 @@ If you want to use this in your project just reference is with
 - All dev will be done in `src`
 - Run using `crystal src/RandomISBN.cr`
 
-- if you want to use `make` run `make build`
 - **Recommended:** if you want to use `cake`, which is `make` for crystal then, (this is recommended )
   - Make sure you have cake installed `curl https://raw.githubusercontent.com/axvm/cake/master/install.sh | bash`
   - Run `cake build`
   - Run `./bin/RandomISBN`
+- if you want to use `make` run `make build`
+
 
 ## Contributing
 
