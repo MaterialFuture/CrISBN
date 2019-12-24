@@ -29,13 +29,12 @@ and then install the library into your project:
 $ shards install
 ```
 
-
 ## Usage
 
 If you want to use this in your project just reference is with 
-- `RandomISBN::New` This will be how you can create 
-- `RandomISBN::New.english` To generate a random english ISBN
-- In the future perhaps something like `RandomISBN::English.new` would be a better way of going about it. I'm still looking into the best way to structure this.
+- `RandomISBN::English.new` This will be how you can create an ISBN
+- I also have a lottery type variable that is used that could be used elsewhere, right now it's accessed like RandNum.new.
+
 
 ## Development
 
