@@ -11,12 +11,20 @@ Main Repository is the GitLab one <https://gitlab.com/MaterialFuture/random-isbn
 
 ## Installation
 
+- **Recommended:** if you want to use `cake`, which is `make` for crystal then, (this is recommended )
+  - Make sure you have cake installed `curl https://raw.githubusercontent.com/axvm/cake/master/install.sh | bash`
+  - Run `cake build`
+  - Run `./bin/RandomISBN`
+- if you want to use `make` run `make build`
+
+## Usage
+
 Add it to your `shard.yml`:
 
 ```crystal
 dependencies:
   redis:
-    gitlab: random-isbn
+    gitlab: MaterialFuture/random-isbn
 ```
 
 and then install the library into your project:
@@ -24,8 +32,6 @@ and then install the library into your project:
 ```bash
 $ shards install
 ```
-
-## Usage
 
 If you want to use this in your project just reference is with 
 - `RandomISBN::English.new` This will be how you can create an ISBN
@@ -43,7 +49,6 @@ If you want to use this in your project just reference is with
   - Run `./bin/RandomISBN`
 - if you want to use `make` run `make build`
 
-
 ## Contributing
 
 1. Fork it (<https://gitlab.com/MaterialFuture/random-isbn/-/forks/new>)
@@ -55,3 +60,7 @@ If you want to use this in your project just reference is with
 ## Contributors
 
 - [Konstantine](https://gitlab.com/materialfuture) - creator and maintainer
+
+## Notes
+
+ISBN number generated from list here: <https://en.wikipedia.org/wiki/International_Standard_Book_Number#ISBN-10_to_ISBN-13_conversion>
