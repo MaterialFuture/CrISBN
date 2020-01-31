@@ -1,7 +1,9 @@
-require "./RandomISBN/**"
+require "./randomISBN/english.cr"
 
 module RandomISBN
   VERSION = "1.1.1"
+
+  puts RandomISBN::English.info
 
   rand = RandomISBN::English.new
 
