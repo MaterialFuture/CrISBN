@@ -39,9 +39,7 @@ RandomISBN::English.new
 ```
 This will be how you can create an ISBN
 
-
 - I also have a lottery-like variable that is used that could be used elsewhere, right now it's accessed like `RandNum.new.fromZero`.
-
 
 ## Development
 
@@ -69,3 +67,8 @@ This will be how you can create an ISBN
 ## Notes
 
 ISBN number generated from list here: <https://en.wikipedia.org/wiki/International_Standard_Book_Number#ISBN-10_to_ISBN-13_conversion>
+
+#### Todo
+- Cleanup main file
+- Add more language options
+- Add support for Amazon's AISN

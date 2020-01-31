@@ -2,10 +2,8 @@ require "./rand"
 require "json"
 
 class RandomISBN::English
-
-  # This is the array that'll be used for the english one
-  LANG_ENG = ["9780", "9781"]
-  LANG = LANG_ENG.sample()
+  LANG_ENG = ["9780", "9781"] #This is the array that'll be used for the english one, if there's more I can add it below, I'm sure there's a better way of doing it.
+  LANG = LANG_ENG.sample()    #Pick randomly from the array above and
 
   def self.info
     puts "Generates a random legal ISBN, may or may not be a real book."
@@ -13,31 +11,27 @@ class RandomISBN::English
   end
 
   def self.new
-    if (LANG === "9780") # Todo: Cleanup by making it reference the key, not the value
+    if (LANG === "9780")
       digit_codes = Random.new.rand(1..6)
-      if digit_codes === 6
+      case digit_codes
+      when 6
         rand_byte = RandNum.new.fromZero 7
         reg_group = Random.new.rand(1)
-
-      elsif digit_codes === 5
+      when 5
         rand_byte = RandNum.new.fromZero 6
         reg_group_rand = [200..227, 229..368, 370..638, 640..647, 649..654, 656..699].sample()
         reg_group = Random.new.rand(reg_group_rand)
-
-      elsif digit_codes === 4
+      when 4
         rand_byte = RandNum.new.fromZero 5
         reg_group_rand = [2280..2289, 3690..3699, 6390..6398, 6550..6559, 7000..8499].sample()
         reg_group = Random.new.rand(reg_group_rand)
-
-      elsif digit_codes === 3
+      when 3
         rand_byte = RandNum.new.fromZero 4
         reg_group = Random.new.rand(85000..89999)
-
-      elsif digit_codes === 2
+      when 2
         rand_byte = RandNum.new.fromZero 3
         reg_group = Random.new.rand(900000..949999)
-
-      elsif digit_codes === 1
+      when 1
         rand_byte = RandNum.new.fromZero 2
         reg_group_rand = [6399000..6399999, 6480000..6489999, 9500000..9999999].sample()
         reg_group = Random.new.rand(reg_group_rand)
@@ -83,6 +77,5 @@ class RandomISBN::English
     
     # Returns what is needed as a string
     return LANG + reg_group.to_s + rand_byte.to_s
-
   end
 end
