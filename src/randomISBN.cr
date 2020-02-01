@@ -14,7 +14,6 @@ module RandomISBN
   # The main part of the app, returns the value as a string.
   puts "New ISBN-13: " + rand
 
-  # Size for testing to make sure the while loop works
-  print "Size of ISBN Number: "
-  p rand.size
+  # Size for testing to make sure the while loop works, Remove once tests are in place
+  puts "Size of string: " + (rand.size).to_s
 end
