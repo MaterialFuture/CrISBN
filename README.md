@@ -1,10 +1,10 @@
-# Random ISBN Generator in Crystal
+# ISBN Library in Crystal
 [![Language](https://img.shields.io/badge/language-crystal-776791.svg)](https://github.com/crystal-lang/crystal)
 ![working](https://img.shields.io/badge/stability-working-success.svg)
 
-This will generate a random legal ISBN number. The reason for this would be if you want to get a random book or generate a random book for some project.
+Crystal library to handle ISBNs. The goal is for this library to handle any action you'd want from an ISBN such as validate, generate new ones, check to see if an ISBN belongs to something and what, and other actions that come to mind.
 
-The idea is to eventually be able to generate all the different types of ISBNs or other types of codes with different language reference codes. Right now the goal for release is to generate just the english ones.
+**Note**: I will be changing this repo in the next coming commits to be a library rather than a random ISBN generator. I want to make something more purposeful than a one-off tool, hoever I want to still keep that generator as a function in the library.
 
 Main Repository is the GitLab one <https://gitlab.com/MaterialFuture/random-isbn>
 
@@ -35,14 +35,19 @@ If you want to use this in your project just reference is with
 RandomISBN::English.new
 ```
 
-Refer to `examples/` for examples to see how to use.
-
 I also have a lottery-like variable that is used that could be used elsewhere, right now it's accessed like 
 ```
 RandNum.fromZero
 or
 RandNum.fromOne
 ```
+
+You can also validate an ISBN by using like below
+```
+RandomISBN::English.new(ISBN)
+```
+
+For more examples look in `examples/` directory.
 
 ## Development
 - All dev will be done in `src`
@@ -53,6 +58,9 @@ RandNum.fromOne
   - Run `cake build`
   - Run `./bin/RandomISBN`
 - if you want to use `make` run `make build`
+
+## Spec/Test
+Run `crystal spec` to make sure that all the tests pass before developing, and if there's anything that fails let me know or feel free to make a PR or issue.
 
 ## Contributing
 1. Fork it (<https://gitlab.com/MaterialFuture/random-isbn/-/forks/new>)
