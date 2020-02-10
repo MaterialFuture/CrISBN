@@ -5,10 +5,10 @@ describe ISBN do
     ISBN.should_not eq(false || false) #Shouldn't be true or false
   end
   it "Checks the size of the English ISBN to make sure it's 13" do
-    ((ISBN::English.new).size).should eq(13) #Make sure that it always prints 13 digits
+    ((ISBN::Generate.english).size).should eq(13) #Make sure that it always prints 13 digits
   end
   it "Checks to make sure the radom isbn is valid" do
-    (ISBN::IsValid.new(ISBN::English.new)).should eq(true) #Make sure that it always prints 13 digits
+    (ISBN::IsValid.new(ISBN::Generate.english)).should eq(true) #Make sure that it always prints 13 digits
   end
 end
 

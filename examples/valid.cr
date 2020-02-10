@@ -1,10 +1,10 @@
-require "../src/crisbn/english"
+require "../src/crisbn/generate"
 require "../src/crisbn/valid"
 
 # Tests out `src/ISBN/valid` on a random ISBN
 
 # Creates a random ISBN and then checks if it's valid
-rand = ISBN::English.new
+rand = ISBN::Generate.english
 puts "#{rand} Is valid: #{ISBN::IsValid.new(rand)}"
 
 my_book = "1237893-789322"

@@ -1,16 +1,11 @@
 require "./rand"
 require "json"
 
-class ISBN::English
+class ISBN::Generate
   LANG_ENG = ["9780", "9781"] #This is the array that'll be used for the english one, if there's more I can add it below, I'm sure there's a better way of doing it.
   LANG = LANG_ENG.sample()    #Pick randomly from the array above and
 
-  def self.info
-    puts "Generates a random legal ISBN, may or may not be a real book."
-    puts "Use ISBN::English.new to generate a new one."
-  end
-
-  def self.new
+  def self.english
     if (LANG === "9780")
       digit_codes = Random.new.rand(1..6)
       case digit_codes
