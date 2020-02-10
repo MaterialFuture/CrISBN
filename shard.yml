@@ -1,5 +1,5 @@
 name: randomISBN
-version: 0.2.3
+version: 0.2.4
 authors:
   - MaterialFuture <konstantine@andrasmedia.org>
 crystal: 0.31.1
