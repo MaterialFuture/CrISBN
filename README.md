@@ -31,7 +31,7 @@ $ shards install
 
 If you want to use this in your project just reference is with 
 ```cr
-RandomISBN::English.new
+ISBN::Generate.english
 ```
 
 I also have a lottery-like variable that is used that could be used elsewhere, right now it's accessed like 
@@ -45,7 +45,7 @@ RandNum.fromOne
 
 You can also validate an ISBN by using like below
 ```cr
-RandomISBN::English.new(ISBN)
+ISBN::Generate.english(ISBN)
 ```
 
 For more examples look in `examples/` directory.
