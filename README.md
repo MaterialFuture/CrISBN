@@ -37,9 +37,10 @@ If you want to use this in your project just reference is with
 ```crystal
 RandomISBN::English.new
 ```
-This will be how you can create an ISBN
 
-- I also have a lottery-like variable that is used that could be used elsewhere, right now it's accessed like `RandNum.new.fromZero`.
+Refer to `examples/` for examples to see how to use.
+
+I also have a lottery-like variable that is used that could be used elsewhere, right now it's accessed like `RandNum.new.fromZero`.
 
 ## Development
 
@@ -69,6 +70,6 @@ This will be how you can create an ISBN
 ISBN number generated from list here: <https://en.wikipedia.org/wiki/International_Standard_Book_Number#ISBN-10_to_ISBN-13_conversion>
 
 #### Todo
-- Cleanup main file
 - Add more language options
 - Add support for Amazon's AISN
+- Add Admiral cli and Table cli creation
