@@ -1,2 +1,3 @@
 require "spec"
-require "../src/randomISBN"
+require "../src/RandomISBN"
+require "../src/RandomISBN/**"
