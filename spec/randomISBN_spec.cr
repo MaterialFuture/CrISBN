@@ -1,14 +1,14 @@
 require "./spec_helper"
 
-describe RandomISBN do
+describe ISBN do
   it "Main Crystal File works" do
-    RandomISBN.should_not eq(false || false) #Shouldn't be true or false
+    ISBN.should_not eq(false || false) #Shouldn't be true or false
   end
   it "Checks the size of the English ISBN to make sure it's 13" do
-    ((RandomISBN::English.new).size).should eq(13) #Make sure that it always prints 13 digits
+    ((ISBN::English.new).size).should eq(13) #Make sure that it always prints 13 digits
   end
   it "Checks to make sure the radom isbn is valid" do
-    (RandomISBN::IsValid.new(RandomISBN::English.new)).should eq(true) #Make sure that it always prints 13 digits
+    (ISBN::IsValid.new(ISBN::English.new)).should eq(true) #Make sure that it always prints 13 digits
   end
 end
 

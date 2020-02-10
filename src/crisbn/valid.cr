@@ -4,7 +4,7 @@ require "json"
 
 # WIP - This will check if the ISBN is valid, that way people can check other ISBNs
 
-class RandomISBN::IsValid
+class ISBN::IsValid
   def self.new(isbn : String)
     # Check to make sure string has valid encoding and raise execption if not
     raise Exceptions::Generic.new("ISBN isn't valid") unless isbn.valid_encoding?
@@ -16,9 +16,9 @@ class RandomISBN::IsValid
 
     case isbn.size
       when 10
-        RandomISBN::IsValid.valid_isbn_10(isbn)
+        ISBN::IsValid.valid_isbn_10(isbn)
       when 13
-        RandomISBN::IsValid.valid_isbn_13(isbn)
+        ISBN::IsValid.valid_isbn_13(isbn)
       else
         false
     end

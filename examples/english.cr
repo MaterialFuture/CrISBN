@@ -1,11 +1,11 @@
-require "../src/RandomISBN/english.cr"
+require "../src/crisbn/english.cr"
 
-puts RandomISBN::English.info
-rand = RandomISBN::English.new
+puts ISBN::English.info
+rand = ISBN::English.new
 
 # Check to make sure that it prints out a 13 digit number
 while (rand.size < 13)
-  rand = RandomISBN::English.new
+  rand = ISBN::English.new
 end
 
 # The main part of the app, returns the value as a string.
