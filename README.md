@@ -20,7 +20,7 @@ Add it to your `shard.yml`:
 
 ```yml
 dependencies:
-  redis:
+  crisbn:
     github: MaterialFuture/crisbn
 ```
 
@@ -71,7 +71,7 @@ Run `crystal spec` to make sure that all the tests pass before developing, and i
 5. Create a new Pull Request
 
 ## Contributors
-- [Konstantine](https://github.com/materialfuture) - creator and maintainer
+- [MaterialFuture](https://github.com/materialfuture) - creator and maintainer
 
 ## Notes
 ISBN number generated from list here: <https://en.wikipedia.org/wiki/International_Standard_Book_Number#ISBN-10_to_ISBN-13_conversion>

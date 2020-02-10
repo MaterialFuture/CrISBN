@@ -1,4 +1,4 @@
-name: randomISBN
+name: crisbn
 version: 0.3.0
 authors:
   - MaterialFuture <konstantine@andrasmedia.org>
@@ -6,6 +6,5 @@ crystal: 0.31.1
 license: MIT
 
 targets:
-  GenerateISBN:
-    main: src/randomISBN.cr
-
+  crisbn:
+    main: src/crisbn.cr
